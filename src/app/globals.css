@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #000;
+  --secondary-color: #000;
+  --title-color: #000;
+  --desc-color: #000;
+  --body-color: #000;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-color: #fff;
+    --secondary-color: #fff;
+    --title-color: #fff;
+    --desc-color: #fff;
+    --body-color: #fff;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
