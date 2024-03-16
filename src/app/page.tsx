@@ -10,8 +10,11 @@ export default function Home() {
       <HeroBanner />
       <section className=" w-[100%] h-[100%] py-[80px]">
         <div className="container">
+          <h2 className="text-3xl md:text-5xl font-bold text-center">
+          Stay ahead on gaining and sharing information using following Matrixly tools:
+          </h2>
           <ScrollCard />
-        </div>
+        </div> 
       </section>
       <section className=" w-[100%] h-[100%] py-[80px]">
         <div className="container">
@@ -24,7 +27,7 @@ export default function Home() {
           <CardHoverEffect />
         </div>
       </section>
-      <section className=" w-[100%] h-[100%] py-[80px]">
+      <section className=" w-[100%] h-[100%] py-[80px] pt-0">
         <div className="container">
           <div className="bg-[#1d1c20] p-10 rounded-lg">
             <TextRevealCardPreview/>
