@@ -16,15 +16,15 @@ export function HeroBanner() {
     },
     {
       text: "AI",
-      className: "text-primary dark:text-blue-500",
+      className: "text-white dark:text-blue-500",
     },
     {
       text: "with",
-      className: "text-primary dark:text-blue-500",
+      className: "text-white dark:text-blue-500",
     },
     {
-      text: "Matrixly.",
-      className: "text-primary dark:text-blue-500",
+      text: "Matrixly",
+      className: "text-white dark:text-blue-500",
     },
   ];
   return (
