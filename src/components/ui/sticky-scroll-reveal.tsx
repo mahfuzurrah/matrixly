@@ -42,7 +42,7 @@ export const StickyScroll = ({
 
   return (
     <motion.div
-      className="h-[30rem] w-[100%] overflow-y-auto flex justify-between relative"
+      className="h-[20rem] overflow-y-auto flex justify-between relative"
       ref={ref}
     >
       <div className="div relative flex items-start px-4">
@@ -56,7 +56,7 @@ export const StickyScroll = ({
                 animate={{
                   opacity: activeCard === index ? 1 : 0.3,
                 }}
-                className="text-h4 font-bold text-title"
+                className="text-2xl font-bold text-slate-100"
               >
                 {item.title}
               </motion.h2>
@@ -67,7 +67,7 @@ export const StickyScroll = ({
                 animate={{
                   opacity: activeCard === index ? 1 : 0.3,
                 }}
-                className="text-base text-desc max-w-sm mt-10"
+                className="text-kg text-slate-300 max-w-sm mt-10"
               >
                 {item.description}
               </motion.p>

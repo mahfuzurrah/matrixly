@@ -15,9 +15,7 @@ const transition = {
 
 export const MenuItem = ({
   setActive,
-  active,
   item,
-  children,
 }: {
   setActive: (item: string) => void;
   active: string | null;
@@ -28,7 +26,7 @@ export const MenuItem = ({
     <div onMouseEnter={() => setActive(item)} className="relative ">
       <motion.p
         transition={{ duration: 0.3 }}
-        className="cursor-pointer text-black hover:opacity-[0.9] dark:text-title"
+        className="cursor-pointer text-white hover:opacity-[0.9] dark:text-white"
       >
         {item}
       </motion.p>
@@ -44,20 +42,23 @@ export const Menu = ({
   children: React.ReactNode;
 }) => {
   return (
-    <nav
+      <>
+          <nav
       onMouseLeave={() => setActive(null)} // resets the state
-      className="w-full flex justify-between items-center space-x-4 px-4 py-4"
+      className="relative w-[100%] dark:bg-[#1d1c20] bg-[#1d1c20] shadow-input flex
+    justify-between space-x-4 px-4 pl-5 py-4"
     >
-      <div>
+      <Link href="/">
         <Image
-          src="/img/logo.png"
+          src="/svg/logo.svg"
           width={130}
           height={50}
           alt="Picture of the author"
         />
-      </div>
+      </Link>
       <div className="flex items-center gap-8">{children}</div>
     </nav>
+    </>
   );
 };
 
